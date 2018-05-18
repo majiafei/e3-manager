@@ -1,5 +1,9 @@
 package cn.e3mall.service;
 
+
+import java.util.List;
+
+import cn.e3mall.common.EasyUIResultVO;
 import cn.e3mall.pojo.TbItem;
 
 public interface TbItemService {
@@ -10,5 +14,7 @@ public interface TbItemService {
 	 * @return
 	 */
 	TbItem getItemById(Long itemId);
+	
+	EasyUIResultVO<List<TbItem>> getItemList(int page, int size);
 
 }
